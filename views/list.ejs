@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Covid-19 Tracker</title>
+    <!-- Google Font Link-->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+    <!-- Font Awesome Link-->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.1/css/all.css" integrity="sha384-vp86vTRFVJgpjF9jiIGPEEqYqlDwgyBgEF109VFjmqGmIY/Y4HV4d3Gp2irVfcrp" crossorigin="anonymous">
+    <!-- Bootstrap CDN-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+    <!-- Stylesheet Link-->
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="main-div">
+        <h4 class="blink_me" style="color: white;"><span><i class="fas fa-circle" style="color: red;font-size: 15px;"></i ></span> Live</h4>
+        <h1 class="main-heading">Covid-19 India Tracker</h1>
+    </div>
+    <div class="container card-main-div">
+        <div class="row">
+          <div class="col">
+            <div class="card card-1" style="width: 20rem;background-color: #3d84b8;">
+                
+                <div class="card-body">
+                  <h5 class="card-title"> <span>TOTAL</span> CASES </h5>
+                  <p class="card-text"> <%= noOfCases%> </p>
+                  
+                </div>
+              </div>
+          </div>
+          <div class="col">
+            <div class="card card-2" style="width: 20rem;background-color: #f05945;">
+                
+                <div class="card-body" >
+                  <h5 class="card-title"> <span>TOTAL</span> DEATHS</h5>
+                  <p class="card-text"> <%= noOfDeaths %></p>
+                  
+                </div>
+              </div>
+          </div>
+          <div class="col">
+            <div class="card card-3" style="width: 20rem;background-color:#4CCB17">
+                
+                <div class="card-body">
+                  <h5 class="card-title"><span>PATIENTS</span> RECOVERED </h5>
+                  <p class="card-text"> <%= noOfRecoveries%> </p>
+                  
+                </div>
+              </div>
+          </div>
+          <div class="col">
+            <div class="card card-cw-1" style="width: 20rem;background-color: #f7a440;">
+                
+                <div class="card-body">
+                  <h5 class="card-title"><span>TOTAL</span> ACTIVE</h5>
+                  <p class="card-text"> <%= noOfActiveCases%> </p>
+                  
+                </div>
+              </div>
+          </div>
+          <div class="col">
+            <div class="card card-cw-2" style="width: 20rem;background-color: #cdc733;">
+                
+                <div class="card-body">
+                  <h5 class="card-title"><span>CASES</span> TODAY </h5>
+                  <p class="card-text"> <%= noOfCasesToday%> </p>
+                  
+                </div>
+              </div>
+          </div>
+          <div class="col">
+            <div class="card card-cw-3" style="width: 20rem;background-color: #c8c6a7;">
+                
+                <div class="card-body">
+                  <h5 class="card-title"> <span>DEATHS</span> TODAY </h5>
+                  <p class="card-text"><%= noOfDeathsToday%></p>
+                  
+                </div>
+              </div>
+          </div>
+        </div>
+      </div>
+</body>
+</html>
