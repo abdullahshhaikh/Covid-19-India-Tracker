@@ -98,3 +98,9 @@ body{
         margin: auto;
     }
   }
+
+  .name-heading{
+      text-align: center;
+      color: white;
+      margin-top: 20px;
+  }
